@@ -7,7 +7,7 @@
 
 :root {
   --color-bg: #0f0f0f;
-  --color-surface: #1a1a1a;
+  --color-surface: #0f0f0f;
   --color-accent: #6c63ff;
   --color-text: #e8e8e8;
   --color-muted: #888;
@@ -169,14 +169,14 @@ section h2::after {
 
 .project-panels {
   width: 100%;
-  background: #070707;
+  background: var(--color-bg);
   padding: 2rem 0 4rem;
 }
 
 .project-panel {
   max-width: var(--max-width);
   margin: 0 auto;
-  background: var(--color-surface);
+  background: var(--color-bg);
   border: 1px solid #222;
   border-radius: var(--radius);
   padding: 2rem;
