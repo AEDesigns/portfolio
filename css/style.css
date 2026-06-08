@@ -31,11 +31,13 @@ body {
 a {
   color: var(--color-accent);
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover,
 a:focus-visible {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .skip-link {
