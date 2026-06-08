@@ -51,9 +51,9 @@
         </article>
 
         <article class="card">
-          <h3>Project Two</h3>
-          <p>Short description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button type="button" class="btn" data-opens-dialog="dialog-project-2" aria-controls="dialog-project-2" aria-expanded="false">
+          <h3>Cairn Digital</h3>
+          <p>Full-stack site for my independent accessibility consulting practice — React front end, Express + MongoDB API, automated audit pipeline behind the free-audit form, deployed on Heroku.</p>
+          <button type="button" class="btn" data-opens-dialog="dialog-project-2" aria-haspopup="dialog">
             View details
           </button>
         </article>
@@ -126,42 +126,48 @@
           <span aria-hidden="true">×</span>
         </button>
 
-        <h3 id="dialog-project-2-title">Project Two</h3>
+        <h3 id="dialog-project-2-title">Cairn Digital</h3>
 
         <h4>About</h4>
-        <p>Longer description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>The marketing and lead-gen site for Cairn Digital, my independent accessibility consulting practice. Visitors can browse services, request a free automated audit, and book a consultation. Built as a full React single-page app with an Express + MongoDB API and SendGrid for transactional email, deployed on Heroku.</p>
+        <p>Behind the free-audit form is a background worker pipeline: a MongoDB Atlas trigger picks up new leads, BullMQ + Redis queues the work, a headless Chromium scan runs axe-core against the submitted URL, results land in a per-client Google Sheet, and the lead gets emailed their report automatically.</p>
+        <p>The site is held to its own standard — skip links, keyboard-tested nav, designed focus indicators, semantic landmarks, full WCAG 2.1 AA conformance. If I'm asking a prospect to pay me to fix theirs, mine has to be exemplary.</p>
 
         <h4>Tools Used</h4>
         <ul>
-          <li>Tool One</li>
-          <li>Tool Two</li>
-          <li>Tool Three</li>
+          <li>React</li>
+          <li>Node.js / Express</li>
+          <li>MongoDB Atlas</li>
+          <li>BullMQ + Redis</li>
+          <li>Playwright + axe-core</li>
+          <li>Google Sheets API</li>
+          <li>Heroku</li>
         </ul>
 
         <h4>Screenshots</h4>
         <ul class="screenshot-grid">
           <li>
-            <a href="https://picsum.photos/1200/800?random=21" target="_blank" rel="noopener noreferrer">
-              <img src="https://picsum.photos/300/200?random=21" alt="Screenshot 1 description" width="300" height="200">
+            <a href="assets/img/cairn.png" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/cairn.png" alt="Cairn Digital: Homepage hero with services overview and free audit call-to-action">
               <span class="visually-hidden">(opens full size in new tab)</span>
             </a>
           </li>
           <li>
-            <a href="https://picsum.photos/1200/800?random=22" target="_blank" rel="noopener noreferrer">
-              <img src="https://picsum.photos/300/200?random=22" alt="Screenshot 2 description" width="300" height="200">
+            <a href="assets/img/cairn2.png" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/cairn2.png" alt="Cairn Digital: Free accessibility audit request form">
               <span class="visually-hidden">(opens full size in new tab)</span>
             </a>
           </li>
           <li>
-            <a href="https://picsum.photos/1200/800?random=23" target="_blank" rel="noopener noreferrer">
-              <img src="https://picsum.photos/300/200?random=23" alt="Screenshot 3 description" width="300" height="200">
+            <a href="assets/img/cairn3.png" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/cairn3.png" alt="Cairn Digital: Services page listing audit, remediation, and retainer offerings">
               <span class="visually-hidden">(opens full size in new tab)</span>
             </a>
           </li>
         </ul>
 
         <p>
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <a href="https://theaccessibilityhighlander.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
             View this project
             <span class="visually-hidden">(opens in new tab)</span>
           </a>
