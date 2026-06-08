@@ -297,7 +297,8 @@ section h2::after {
 
 .screenshot-grid img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
   border-radius: var(--radius);
   display: block;
 }
