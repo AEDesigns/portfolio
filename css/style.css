@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
@@ -198,6 +199,12 @@ section h2::after {
   margin-bottom: 1rem;
 }
 
+.project-panel p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1rem;
@@ -208,16 +215,7 @@ section h2::after {
   transition: opacity 0.2s, transform 0.2s;
   min-height: 44px;
   line-height: 1.2;
-}
-
-.btn:hover,
-.btn:focus-visible,
-.btn-download:hover,
-.btn-download:focus-visible,
-.btn-primary:hover,
-.btn-primary:focus-visible {
-  opacity: 0.9;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-download,
@@ -290,7 +288,7 @@ section h2::after {
 .screenshot-grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -351,6 +349,42 @@ section h2::after {
 
   .screenshot-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 3rem 1rem;
+  }
+
+  #hero {
+    min-height: 70vh;
+  }
+
+  .project-panel {
+    padding: 1.25rem;
+  }
+
+  .screenshot-grid img {
+    height: 225px;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .project-panel {
+    padding: 1rem;
+  }
+
+  .screenshot-grid img {
+    height: 180px;
   }
 }
 
